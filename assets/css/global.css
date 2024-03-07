@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;;
+
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* Rules for coloring the icon. */
+.material-icons-outlined.purple { color: #55569E; }
+
+/* Rules for sizing the icon. */
+.material-icons-outlined.md-16 { font-size: 16px; }
+.material-icons-outlined.md-24 { font-size: 24px; }
+.material-icons-outlined.md-32 { font-size: 32px; }
+.material-icons-outlined.md-48 { font-size: 48px; }
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    display: block;
+    width: 50vw;
+    height: 40vh;
+    background: linear-gradient(239deg, rgba(131,58,180,1) 14%, rgba(181,72,221,1) 33%, rgba(247,79,255,1) 42%, rgba(255,183,162,1) 69%, rgba(255,215,204,1) 92%);
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    filter: blur(70px);
+}
+.container::after{
+    content: '';
+    display: block;
+    width: 50vw;
+    height: 40vh;
+    background: 
+        linear-gradient(127deg, rgba(36,46,233,1), rgba(126,175,252,0) 70.71%),
+        linear-gradient(217deg, rgba(250,95,71,1), rgba(255,0,0,0) 70.71%),
+        linear-gradient(336deg, rgba(201,100,255,1), rgba(0,0,255,0) 70.71%);
+    
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    filter: blur(70px);
+}
+
+@media only screen and (min-width: 750px) {
+    .container {
+        max-width: 80vw;
+        margin: 1rem auto;
+    }
+
+}

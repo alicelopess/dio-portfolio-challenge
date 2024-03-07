@@ -1,0 +1,26 @@
+.experiences {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 2rem;
+}
+
+.experiences .experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.8rem;
+}
+
+.experiences .experience div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.experiences .experience div i {
+    font-size: 1rem;
+}

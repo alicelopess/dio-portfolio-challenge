@@ -1,0 +1,28 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 2rem;
+}
+
+.portfolio .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.8rem;
+}
+
+.portfolio .project div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.portfolio .project div i {
+    font-size: 1.125rem;
+}
+
+.portfolio .project div h3 {
+    font-size: 1.25rem;
+}

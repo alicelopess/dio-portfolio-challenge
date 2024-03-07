@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Alice Dantas</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Open Sans Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons Link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/0a6824d719.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS Link-->
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/accordion.css">
+    <link rel="stylesheet" href="./assets/css/languages.css">
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
+    <link rel="stylesheet" href="./assets/css/experiences.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="material-icons-outlined md-32">
+                more_horiz
+            </span>
+            <img src="./assets/img/alice.jpeg" alt="Alice's Photo" class="profile-img">
+            
+            <h1 class="profile-title">Olá, <br>eu sou a Alice Dantas</h1>
+            <div class="profile-info">
+                <div>
+                    <span class="material-icons-outlined purple md-16">
+                        person
+                    </span>
+                    <p class="job">Junior Developer</p>
+                </div>
+
+                <div>
+                    <span class="material-icons-outlined purple md-16">
+                        place
+                    </span>
+                    <p class="location">Mossoró - RN</p>
+                </div>
+
+                <div>
+                    <span class="material-icons-outlined purple md-16">
+                        phone
+                    </span>
+                    <p class="phone">
+                        <a href="#">(00) 0 0000-0000</a>
+                    </p>
+                </div>
+
+                <div>
+                    <span class="material-icons-outlined purple md-16">
+                        mail
+                    </span>
+                    <p class="email">
+                        <a href="mailto:alicedflopes.02@gmail.com">alicedflopes.02@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="accordion">
+                <button class="trigger" type="button">
+                    <h2>Skills</h2>
+                    <span class="material-icons-outlined arrow-down md-32">
+                        keyboard_arrow_down
+                    </span>
+                    <span class="material-icons-outlined arrow-up md-32">
+                        keyboard_arrow_up
+                    </span>
+                </button>
+                <div class="accordion-content">
+                    Em construção...
+                </div>
+            </section>
+            <section class="accordion">
+                <button class="trigger" type="button">
+                    <h2>Idiomas</h2>
+                    <span class="material-icons-outlined arrow-down md-32">
+                        keyboard_arrow_down
+                    </span>
+                    <span class="material-icons-outlined arrow-up md-32">
+                        keyboard_arrow_up
+                    </span>
+                </button>
+
+                <div class="accordion-content">
+                    <ul class="languages">
+                        <li>Português(BR)</li>
+                        <li>Inglês</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="accordion">
+                <button class="trigger" type="button">
+                    <h2>Educação</h2>
+                    <span class="material-icons-outlined arrow-down md-32">
+                        keyboard_arrow_down
+                    </span>
+                    <span class="material-icons-outlined arrow-up md-32">
+                        keyboard_arrow_up
+                    </span>
+                </button>
+                <div class="accordion-content">
+                    Em construção...
+                </div>
+            </section>
+            <section class="accordion">
+                <button class="trigger" type="button">
+                    <h2>Portfolio</h2>
+                    <span class="material-icons-outlined arrow-down md-32">
+                        keyboard_arrow_down
+                    </span>
+                    <span class="material-icons-outlined arrow-up md-32">
+                        keyboard_arrow_up
+                    </span>
+                </button>
+                <div class="accordion-content">
+                    <ul class="portfolio">
+                        <li class="project">
+                            <div>
+                                <i class="fa-brands fa-github"></i>
+                                <h3>Título</h3>
+                            </div>
+                            <a href="https://github.com/alicelopess" target="_blank">Projeto</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="accordion">
+                <button class="trigger" type="button">
+                    <h2>Experiência Profissional</h2>
+                    <span class="material-icons-outlined arrow-down md-32">
+                        keyboard_arrow_down
+                    </span>
+                    <span class="material-icons-outlined arrow-up md-32">
+                        keyboard_arrow_up
+                    </span>
+                </button>
+                <div class="accordion-content">
+                    <ul class="experiences">
+                        <li class="experience">
+                            <h3 class="experience-title">Título</h3>
+                            <div>
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <p class="experience-date-range">date-range</p>
+                            </div>
+                            <p class="experience-description">description</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./assets/js/accordion.js"></script>
+</body>
+</html>
