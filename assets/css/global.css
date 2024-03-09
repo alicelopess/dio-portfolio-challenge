@@ -17,7 +17,8 @@ a:hover {
     text-decoration: underline;
 }
 
-.material-icons-outlined {
+.material-icons-outlined,
+.material-icons-round {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
@@ -44,12 +45,18 @@ a:hover {
 
 /* Rules for coloring the icon. */
 .material-icons-outlined.purple { color: #55569E; }
+.material-icons-round.purple { color: #55569E; }
 
 /* Rules for sizing the icon. */
 .material-icons-outlined.md-16 { font-size: 16px; }
 .material-icons-outlined.md-24 { font-size: 24px; }
 .material-icons-outlined.md-32 { font-size: 32px; }
 .material-icons-outlined.md-48 { font-size: 48px; }
+
+.material-icons-round.md-16 { font-size: 16px; }
+.material-icons-round.md-24 { font-size: 24px; }
+.material-icons-round.md-32 { font-size: 32px; }
+.material-icons-round.md-48 { font-size: 48px; }
 
 body {
     background-color: #000;

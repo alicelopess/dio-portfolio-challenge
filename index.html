@@ -26,51 +26,54 @@
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/accordion.css">
+    <link rel="stylesheet" href="./assets/css/skills.css">
     <link rel="stylesheet" href="./assets/css/languages.css">
     <link rel="stylesheet" href="./assets/css/portfolio.css">
     <link rel="stylesheet" href="./assets/css/experiences.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <span class="material-icons-outlined md-32">
+            <span class="material-icons-outlined md-32 menu">
                 more_horiz
             </span>
-            <img src="./assets/img/alice.jpeg" alt="Alice's Photo" class="profile-img">
+            <div class="default-profile-img">
+                <span class="material-icons-round md-48" style="display: block;">
+                    person
+                </span>
+                <img src="./assets/img/alice.jpeg" alt="Alice's Photo" class="profile-img" style="display: none;">
+            </div>
             
-            <h1 class="profile-title">Olá, <br>eu sou a Alice Dantas</h1>
+            <h1 class="profile-title">Olá, <br>eu sou <span id="profileName">Alice Dantas</span></h1>
             <div class="profile-info">
                 <div>
                     <span class="material-icons-outlined purple md-16">
                         person
                     </span>
-                    <p class="job">Junior Developer</p>
+                    <p class="job" id="profileJob">Junior Developer</p>
                 </div>
 
                 <div>
                     <span class="material-icons-outlined purple md-16">
                         place
                     </span>
-                    <p class="location">Mossoró - RN</p>
+                    <p class="location" id="profileLocation">Mossoró - RN</p>
                 </div>
 
                 <div>
                     <span class="material-icons-outlined purple md-16">
                         phone
                     </span>
-                    <p class="phone">
-                        <a href="#">(00) 0 0000-0000</a>
-                    </p>
+                    <a href="#" id="profilePhone">(00) 0 0000-0000</a>
                 </div>
 
                 <div>
                     <span class="material-icons-outlined purple md-16">
                         mail
                     </span>
-                    <p class="email">
-                        <a href="mailto:alicedflopes.02@gmail.com">alicedflopes.02@gmail.com</a>
-                    </p>
+                    <a href="mailto:alicedflopes.02@gmail.com" id="profileEmail">alicedflopes.02@gmail.com</a>
                 </div>
             </div>
         </header>
@@ -86,7 +89,56 @@
                     </span>
                 </button>
                 <div class="accordion-content">
-                    Em construção...
+                    <div class="skills">
+                        <div class="professional-skills">
+                            <h3>Habilidades Profissionais:</h3>
+                            <ul id="hardSkills">
+                                <li class="professional-skill">
+                                    <!-- <img src="#" alt="react" title="react"> -->
+                                    <i class="fa-brands fa-html5"></i>
+                                </li>
+                                <li class="professional-skill">
+                                    <!-- <img src="#" alt="react" title="react"> -->
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </li>
+                                <li class="professional-skill">
+                                    <!-- <img src="#" alt="react" title="react"> -->
+                                    <i class="fa-brands fa-js"></i>
+                                </li>
+                                <li class="professional-skill">
+                                    <!-- <img src="#" alt="react" title="react"> -->
+                                    <i class="fa-brands fa-node-js"></i>
+                                </li>
+                                <li class="professional-skill">
+                                    <!-- <img src="#" alt="react" title="react"> -->
+                                    <i class="fa-brands fa-python"></i>
+                                </li>
+                                <li class="professional-skill">
+                                    <i class="fa-brands fa-github"></i>
+                                </li>
+                                <li class="professional-skill">
+                                    <i class="fa-brands fa-figma"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="personal-skills">
+                            <h3>Habilidades Pessoais:</h3>
+                            <ul id="softSkills">
+                                <li class="personal-skill loading">
+                                    Carregando...
+                                </li>
+                                <!-- <li class="personal-skill">
+                                    Trabalho em equipe 
+                                </li>
+                                <li class="personal-skill">
+                                    Organização
+                                </li>
+                                <li class="personal-skill">
+                                    Flexibilidade
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="accordion">
@@ -101,9 +153,9 @@
                 </button>
 
                 <div class="accordion-content">
-                    <ul class="languages">
-                        <li>Português(BR)</li>
-                        <li>Inglês</li>
+                    <ul class="languages" id="languages">
+                        <!-- <li class="language">Português(BR)</li> -->
+                        <li class="language loading">Carregando...</li>
                     </ul>
                 </div>
             </section>
@@ -132,13 +184,14 @@
                     </span>
                 </button>
                 <div class="accordion-content">
-                    <ul class="portfolio">
-                        <li class="project">
-                            <div>
+                    <ul class="portfolio" id="portfolio">
+                        <li class="project loading">
+                            <p>Carregando...</p>
+                            <!-- <div class="project-title-container">
                                 <i class="fa-brands fa-github"></i>
-                                <h3>Título</h3>
+                                <h3 class="project-title">Título</h3>
                             </div>
-                            <a href="https://github.com/alicelopess" target="_blank">Projeto</a>
+                            <a href="https://github.com/alicelopess" target="_blank" class="project-link">Projeto</a> -->
                         </li>
                     </ul>
                 </div>
@@ -154,20 +207,32 @@
                     </span>
                 </button>
                 <div class="accordion-content">
-                    <ul class="experiences">
-                        <li class="experience">
-                            <h3 class="experience-title">Título</h3>
-                            <div>
+                    <ul class="experiences" id="experiences">
+                        <li class="experience loading">
+                            <p>Carregando...</p>
+                            <!-- <h3 class="experience-title">Jr. FullStack Developer - Orange Juice</h3>
+                            <div class="experience-date-container">
                                 <i class="fa-solid fa-calendar-days"></i>
-                                <p class="experience-date-range">date-range</p>
+                                <p class="experience-date-range">Dec 2023 - Feb 2024</p>
                             </div>
-                            <p class="experience-description">description</p>
+                            <p class="experience-description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Voluptas quidem earum tenetur et animi cum tempora optio perspiciatis incidunt, 
+                                velit magnam voluptatibus distinctio, possimus assumenda eligendi eum, sequi illo nostrum.
+                            </p> -->
                         </li>
                     </ul>
                 </div>
             </section>
         </main>
+        <footer class="footer">
+            <a href="https://www.dio.me/en" target="_blank">
+                <img src="./assets/img/icons/dio-logo.svg" alt="Logo DIO" class="logo-dio">
+            </a>
+        </footer>
     </div>
     <script src="./assets/js/accordion.js"></script>
+    <script src="./assets/js/api.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
